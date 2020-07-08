@@ -1,0 +1,131 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 25px;
+  .app-top{
+    text-align:right;
+  }
+  .app-mian{
+    width: 100%;
+    background: #FFFFFF;
+    padding: 15px 40px;
+    margin: 20px 0;
+    .app-search{
+      display: flex;
+      flex-flow: wrap;
+      // justify-content: space-between;
+      .demo-input-suffix{
+        margin-bottom: 10px;
+        span{
+          font-size: 14px;
+          color: #333333;
+          font-family: 'PingFangSC-Regular', 'PingFang SC';
+          font-weight: 400;
+          width: 115px;
+          display: inline-block;
+          text-align: right;
+        }
+      }
+    }
+    .mybtn{
+      margin-top: 5px;
+      text-align: right;
+    }
+  }
+
+}
+.span1{
+  font-family: 'PingFangSC-Regular', 'PingFang SC';
+  font-weight: 400;
+  font-style: normal;
+  color: #F59A23;
+}
+.span2{
+  font-family: 'PingFangSC-Regular', 'PingFang SC';
+  font-weight: 400;
+  font-style: normal;
+  color: #02A7F0;
+  margin-left: 10px;
+}
+.formCss{
+  width:752px;
+  background-color: #FFFFFF;
+}
+.demo-ruleForm{
+  padding:50px 96px;
+  width:100%
+}
+.formTimer{
+  font-family: 'PingFangSC-Regular', 'PingFang SC';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #606266;
+  margin-left:10px;
+}
+.myDiaLog .el-dialog /deep/ .el-dialog__body{
+  padding: 27px 32px 0px 32px;
+}
+.checkAll>.el-checkbox{
+  margin-bottom: 30px;
+}
